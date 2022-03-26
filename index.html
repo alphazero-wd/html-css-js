@@ -5,151 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="lol, yasuo, ..." />
-    <meta name="description" content="Yasuo Season 12" />
+    <!-- Link to css -->
+    <link rel="stylesheet" href="style.css" />
     <title>My website</title>
   </head>
   <body>
-    <!-- Heading -->
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-
-    <!-- Paragraph -->
-    <p>
-      <!-- Bold -->
-      <b>Lorem</b> ipsum dolor, sit amet consectetur adipisicing elit.
-      Reiciendis error
-      <!-- Italic -->
-      <i>eligendi</i> magnam minima necessitatibus quibusdam libero impedit
-      tenetur et
-      <!-- Underline -->
-      <u>nihil</u>?
-    </p>
-
-    <!-- Break -->
-    <br />
-
-    <!-- line -->
-    <hr />
-
-    <!-- This is a comment -->
-
-    <!-- Anchor -->
-    <a href="https://google.com" target="_blank">Link to Google </a>
-
-    <!-- Image -->
-    <img width="200px" src="./images/yasuo.jpg" alt="Yasuo" />
-
-    <!-- Audio & Video -->
-    <!-- <audio src="" muted loop></audio>
-    <video src="" muted loop width="" height=""></video> -->
-
-    <!-- Unordered Lists -->
-    <ul>
+    <!-- inline style: 1000  -->
+    <h1 class="heading" style="color: red">Heading 1</h1>
+    <h1 class="heading">Heading 2</h1>
+    <h1 id="heading" class="heading">Heading 3</h1>
+    <h3>ul previous sibling</h3>
+    <ul class="list">
       <li>Item 1</li>
       <li>Item 2</li>
       <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
     </ul>
-
-    <!-- Ordered List -->
-    <ol type="A">
+    <h3>ul next sibling</h3>
+    <h3>ul next sibling</h3>
+    <ol class="items">
       <li>Item 1</li>
       <li>Item 2</li>
       <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
     </ol>
+    <div class="paras">
+      <p>Paragraph 1</p>
+      <section>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+      </section>
+      <p>Paragraph 4</p>
+      <p>Paragraph 5</p>
+      <p>Paragraph 6</p>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+      accusantium.
+    </p>
+    <button class="btn">Click me</button>
+    <button disabled class="disabled-btn">You can&apos;t click me</button>
+    <a href="#" class="link">A link</a>
 
-    <!-- Table -->
-    <table>
-      <!-- Table Header -->
-      <thead>
-        <!-- Table Heading -->
-        <th>Name</th>
-        <th>Email</th>
-        <th>Age</th>
-        <th>Gender</th>
-      </thead>
-      <!-- Table Body -->
-      <tbody>
-        <!-- Table Row -->
-        <tr>
-          <!-- Table Description -->
-          <td>Nguyen Van A</td>
-          <td>a@gmail.com</td>
-          <td>30</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <!-- Column Span -->
-          <td colspan="1">Nguyen Van jflksdjfsfl</td>
-          <td>b@gmail.com</td>
-          <td>30</td>
-          <td>Male</td>
-        </tr>
-      </tbody>
-    </table>
-    <br />
-    <br />
-    <!-- Input, Label, Button, Form -->
-
-    <form>
-      <div>
-        <label>Enter your name</label>
-        <input type="text" />
-      </div>
-      <div>
-        <label>Enter your password</label>
-        <input type="password" />
-      </div>
-      <br />
-      <div>
-        <h5>What are your choices?</h5>
-        <div>
-          <input type="checkbox" />
-          <label>Choice 1</label>
-        </div>
-        <div>
-          <input type="checkbox" />
-          <label>Choice 2</label>
-        </div>
-        <div>
-          <input type="checkbox" />
-          <label>Choice 3</label>
-        </div>
-      </div>
-      <div>
-        <h5>1 + 1 =</h5>
-        <div>
-          <input name="ans" type="radio" />
-          <label>1</label>
-        </div>
-        <div>
-          <input name="ans" type="radio" />
-          <label>2</label>
-        </div>
-        <div>
-          <input name="ans" type="radio" />
-          <label>3</label>
-        </div>
-        <div>
-          <input name="ans" type="radio" />
-          <label>4</label>
-        </div>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-
-    <!-- Semantic tags -->
-    <nav></nav>
-    <header></header>
-    <main>
-      <section></section>
-      <article></article>
-      <aside></aside>
-    </main>
-    <footer></footer>
+    <input type="text" placeholder="Enter your name" class="name-input" />
+    <p class="lorem">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, fuga! Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Ut, nesciunt fugiat
+      animi sed rerum illo reiciendis minus nemo dolore. Dolorum.
+    </p>
+    <div class="color">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+        deserunt atque facilis laboriosam amet praesentium, ut vitae nihil
+        doloribus debitis?
+      </p>
+    </div>
+    <div id="gradient"></div>
   </body>
 </html>

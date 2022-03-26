@@ -1,0 +1,171 @@
+/* Universal Selector */
+/* 0 */
+/* * {
+  color: aqua;
+} */
+
+/* simple selectors (tag, id, class) */
+/* tag: 1 */
+h1 {
+  color: yellow;
+}
+/* class : 10 */
+.heading {
+  color: green;
+}
+/* id: 100 */
+#heading {
+  color: gray;
+}
+/* 100 + 1 > 100 */
+/* tag + id */
+h1#heading {
+  color: aqua;
+}
+
+/* !important overwrites everything */
+button {
+  border: none !important;
+}
+
+/* combinators selectors (based on relationship between elements */
+/* descendant selector (space) */
+.list li {
+  background-color: blue;
+  color: white;
+}
+
+/* child selector (>) */
+.paras > p {
+  color: yellowgreen;
+}
+
+/* adjacent sibling selector */
+.paras + p {
+  background-color: yellow;
+}
+
+/* next siblings selector */
+.list ~ h3 {
+  color: steelblue;
+}
+
+/* pseudo selectors */
+.items li:first-child {
+  color: red;
+}
+
+.items li:last-child {
+  color: green;
+}
+
+.items li:nth-child(2) {
+  color: yellow;
+}
+
+.btn:hover {
+  background-color: steelblue;
+  color: white;
+}
+
+.disabled-btn:disabled {
+  background-color: crimson;
+  color: wheat;
+}
+
+.link:active {
+  color: teal;
+}
+.link:visited {
+  color: yellowgreen;
+}
+
+.name-input:focus {
+  background-color: gray;
+  color: white;
+  border: 3px solid grey;
+}
+
+/* pseudo element */
+.lorem::first-letter {
+  font-size: 2rem;
+}
+
+.lorem::first-line {
+  font-weight: bold;
+}
+::selection {
+  background-color: steelblue;
+  color: white;
+}
+/* style the bullets & numering */
+::marker {
+  color: red;
+  font-size: 23px;
+}
+.lorem::before {
+  content: "Hello";
+  color: green;
+}
+.lorem::after {
+  content: "World";
+  color: red;
+}
+/* color & background color see section above */
+/* apart from named color (red, yellow, etc.) we can use hsl, hex, rgb, rgba */
+.color {
+  background-color: lightgray;
+  background-color: #45aefb;
+  background-color: rgb(200, 157, 21);
+  background-color: rgba(50, 219, 167, 0.8);
+  background-color: hsl(147, 50%, 47%);
+}
+
+.color {
+  /* opacity affects everything inside the div while rgba doesn't */
+  opacity: 0.5;
+}
+#gradient {
+  height: 100px;
+  width: 100px;
+  /* top to bottom default */
+  background: linear-gradient(to bottom, red, yellow);
+  /* diagonal */
+  background: linear-gradient(to bottom right, red, yellow);
+  /* degrees */
+  background: linear-gradient(45deg, red, yellow);
+  /* multi colors */
+  background: linear-gradient(
+    to right,
+    red,
+    yellow,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  /* transparency */
+  background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+  /* repeat */
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+
+/* background image */
+body {
+  /* url */
+  background-image: url(./landscape.jpg);
+
+  /* repeat-x repeat-y repeat no-repeat */
+  background-repeat: no-repeat;
+
+  /* x-axis y-axis */
+  background-position: right top;
+
+  /* fixed scroll */
+  background-attachment: fixed;
+
+  /* shorthand */
+  background: url(./landscape.jpg) no-repeat fixed center center;
+}
