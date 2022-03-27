@@ -5,75 +5,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Link to css -->
-    <link rel="stylesheet" href="style.css" />
+    <meta name="keywords" content="lol, yasuo, ..." />
+    <meta name="description" content="Yasuo Season 12" />
     <title>My website</title>
   </head>
   <body>
-    <!-- inline style: 1000  -->
-    <h1 class="heading" style="color: red">Heading 1</h1>
-    <h1 class="heading">Heading 2</h1>
-    <h1 id="heading" class="heading">Heading 3</h1>
-    <h3>ul previous sibling</h3>
-    <ul class="list">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-      <li>Item 5</li>
-    </ul>
-    <h3>ul next sibling</h3>
-    <h3>ul next sibling</h3>
-    <ol class="items">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-      <li>Item 5</li>
-    </ol>
-    <div class="paras">
-      <p>Paragraph 1</p>
-      <section>
-        <p>Paragraph 2</p>
-        <p>Paragraph 3</p>
-      </section>
-      <p>Paragraph 4</p>
-      <p>Paragraph 5</p>
-      <p>Paragraph 6</p>
-    </div>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-      accusantium.
-    </p>
-    <button class="btn">Click me</button>
-    <button disabled class="disabled-btn">You can&apos;t click me</button>
-    <a href="#" class="link">A link</a>
+    <!-- Heading -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
 
-    <input type="text" placeholder="Enter your name" class="name-input" />
-    <p class="lorem">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, fuga! Lorem
-      ipsum dolor sit, amet consectetur adipisicing elit. Ut, nesciunt fugiat
-      animi sed rerum illo reiciendis minus nemo dolore. Dolorum.
+    <!-- Paragraph -->
+    <p>
+      <!-- Bold -->
+      <b>Lorem</b> ipsum dolor, sit amet consectetur adipisicing elit.
+      Reiciendis error
+      <!-- Italic -->
+      <i>eligendi</i> magnam minima necessitatibus quibusdam libero impedit
+      tenetur et
+      <!-- Underline -->
+      <u>nihil</u>?
     </p>
-    <div class="color">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-        deserunt atque facilis laboriosam amet praesentium, ut vitae nihil
-        doloribus debitis?
-      </p>
-    </div>
-    <div id="gradient"></div>
+
+    <!-- Break -->
     <br />
-    <div class="box"></div>
-    <div class="box2"></div>
-    <div class="container">
-      <p>
-        This paragraph is within the container. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Beatae, recusandae nihil, iste cumque ipsa
-        expedita voluptas itaque eos autem voluptatum consequuntur, ea illo
-        explicabo ducimus. In tempora odio doloribus rem, mollitia delectus
-        architecto ab eum dicta eaque exercitationem eius inventore.
-      </p>
+
+    <!-- line -->
+    <hr />
+
+    <!-- This is a comment -->
+
+    <!-- Anchor -->
+    <div><a href="https://google.com" target="_blank">Link to Google </a></div>
+
+    <!-- Image -->
+    <div>
+      <img width="200px" src="landscape.jpg" alt="landscape" />
     </div>
+
+    <!-- Audio, Video, Iframe -->
+    <div>
+      <audio controls loop>
+        <source src="rickroll.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+
+    <div>
+      <video controls width="400px">
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div>
+      <iframe src="https://vnreddit.vercel.app" frameborder="0"></iframe>
+    </div>
+
+    <!-- Unordered Lists -->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <ol type="A">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+
+    <!-- Table -->
+    <table>
+      <!-- Table Header -->
+      <thead>
+        <!-- Table Heading -->
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </thead>
+      <!-- Table Body -->
+      <tbody>
+        <!-- Table Row -->
+        <tr>
+          <!-- Table Description -->
+          <td>John Doe</td>
+          <td>johndoe@gmail.com</td>
+          <td>30</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <!-- Column Span -->
+          <td colspan="1">Jane Doe</td>
+          <td>janedoe@gmail.com</td>
+          <td>26</td>
+          <td>Female</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <!-- Input, Select, Label, Button, Form -->
+    <form>
+      <div>
+        <label for="name">Enter your name</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" />
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <h5>What are your choices?</h5>
+        <div>
+          <input type="checkbox" />
+          <label>Choice 1</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label>Choice 2</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label>Choice 3</label>
+        </div>
+      </div>
+      <div>
+        <h5>1 + 1 =</h5>
+        <div>
+          <input name="ans" type="radio" />
+          <label>1</label>
+        </div>
+        <div>
+          <input name="ans" type="radio" />
+          <label>2</label>
+        </div>
+        <div>
+          <input name="ans" type="radio" />
+          <label>3</label>
+        </div>
+        <div>
+          <input name="ans" type="radio" />
+          <label>4</label>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Semantic tags -->
+    <nav></nav>
+    <header></header>
+    <main>
+      <section></section>
+      <article></article>
+      <aside></aside>
+    </main>
+    <footer></footer>
   </body>
 </html>
