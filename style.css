@@ -1,8 +1,11 @@
-/* Universal Selector */
-/* 0 */
-/* * {
-  color: aqua;
-} */
+/* Universal Selector: 0 */
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
 /* simple selectors (tag, id, class) */
 /* tag: 1 */
@@ -22,7 +25,11 @@ h1 {
 h1#heading {
   color: aqua;
 }
-
+h1,
+h2,
+p {
+  color: red;
+}
 /* !important overwrites everything */
 button {
   border: none !important;
@@ -127,7 +134,7 @@ button {
 }
 #gradient {
   height: 100px;
-  width: 100px;
+  width: 100%;
   /* top to bottom default */
   background: linear-gradient(to bottom, red, yellow);
   /* diagonal */
@@ -155,7 +162,7 @@ button {
 /* background image */
 body {
   /* url */
-  background-image: url(./landscape.jpg);
+  /* background-image: url(./landscape.jpg); */
 
   /* repeat-x repeat-y repeat no-repeat */
   background-repeat: no-repeat;
@@ -164,8 +171,49 @@ body {
   background-position: right top;
 
   /* fixed scroll */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 
   /* shorthand */
-  background: url(./landscape.jpg) no-repeat fixed center center;
+  /* background: url(./landscape.jpg) no-repeat fixed center center; */
+}
+
+/* border, margin, padding */
+.box {
+  height: 300px;
+  width: 300px;
+  border: 2px solid green;
+  /* border-bottom: 3px dotted blue;
+  border-top: 1px dashed yellowgreen;
+  border-left: 4px double red; */
+
+  /* rounded corner (50%) will create a circle */
+  border-radius: 20px;
+
+  /* margins create space around elements, outside of any defined borders. */
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 40px;
+  /* margin shorthand */
+  margin: 20px 40px 30px 10px;
+
+  /* Padding is used to create space around an element's content, inside of any defined borders. */
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 40px;
+  /* padding shorthand */
+  padding: 20px 40px 50px 10px;
+}
+.box2 {
+  width: 150px;
+  height: 150px;
+  background: red;
+  /* margin can be negative */
+  margin-top: -80px;
+}
+.container {
+  /* margin auto with a specified width */
+  max-width: 1000px;
+  margin: 0 auto;
 }
