@@ -5,171 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="lol, yasuo, ..." />
-    <meta name="description" content="Yasuo Season 12" />
+    <!-- separate css file and link to html (recommended) -->
+    <link rel="stylesheet" href="style.css" />
     <title>My website</title>
+    <!-- using style tag to write css (acceptable) -->
+    <style>
+      /* this is a css comment */
+    </style>
   </head>
   <body>
-    <!-- Heading -->
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+    <!-- Inline styling (bad) but 1000 points :) -->
+    <h1 style="color: red">Hello World</h1>
 
-    <!-- Paragraph -->
+    <h1>Green Text</h1>
+
+    <!-- class attribute to style using css -->
+    <h1 class="yellow">Yellow Text</h1>
+
+    <!-- or using id (same as class, but ids are unique) -->
+    <h1 id="blue">Blue Text</h1>
+
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
+      laboriosam.
+    </div>
     <p>
-      <!-- Bold -->
-      <b>Lorem</b> ipsum dolor, sit amet consectetur adipisicing elit.
-      Reiciendis error
-      <!-- Italic -->
-      <i>eligendi</i> magnam minima necessitatibus quibusdam libero impedit
-      tenetur et
-      <!-- Underline -->
-      <u>nihil</u>?
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
+      laboriosam.
     </p>
-
-    <!-- Break -->
-    <br />
-
-    <!-- line -->
-    <hr />
-
-    <!-- This is a comment -->
-
-    <!-- Anchor -->
-    <div><a href="https://google.com" target="_blank">Link to Google </a></div>
-
-    <!-- Image -->
-    <div>
-      <img width="200px" src="landscape.jpg" alt="landscape" />
+    <h4>Previous Items Sibling</h4>
+    <div class="items">
+      <p>This is paragraph 1</p>
+      <p>This is paragraph 2</p>
+      <p>This is paragraph 3</p>
+      <section>
+        <p>This is paragraph 4</p>
+        <p>This is paragraph 5</p>
+        <p>This is paragraph 6</p>
+      </section>
+      <p>This is paragraph 7</p>
     </div>
+    <h4>Adjacent Items Sibling</h4>
+    <h4>Next Items Sibling</h4>
+    <h4>Next Items Sibling</h4>
+    <h4>Next Items Sibling</h4>
+    <h4>Next Items Sibling</h4>
 
-    <!-- Audio, Video, Iframe -->
-    <div>
-      <audio controls loop>
-        <source src="rickroll.mp3" type="audio/mp3" />
-      </audio>
-    </div>
+    <button class="btn">Click me</button>
+    <input class="input" type="text" placeholder="Type in something here" />
 
-    <div>
-      <video controls width="400px">
-        <source src="video.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div>
-      <iframe src="https://vnreddit.vercel.app" frameborder="0"></iframe>
-    </div>
-
-    <!-- Unordered Lists -->
-    <ul>
+    <ul class="list">
       <li>Item 1</li>
       <li>Item 2</li>
       <li>Item 3</li>
     </ul>
-
-    <!-- Ordered List -->
-    <ol type="A">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
+    <ol class="numbers">
+      <li>Number 1</li>
+      <li>Number 2</li>
+      <li>Number 3</li>
     </ol>
 
-    <!-- Table -->
-    <table>
-      <!-- Table Header -->
-      <thead>
-        <!-- Table Heading -->
-        <th>Name</th>
-        <th>Email</th>
-        <th>Age</th>
-        <th>Gender</th>
-      </thead>
-      <!-- Table Body -->
-      <tbody>
-        <!-- Table Row -->
-        <tr>
-          <!-- Table Description -->
-          <td>John Doe</td>
-          <td>johndoe@gmail.com</td>
-          <td>30</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <!-- Column Span -->
-          <td colspan="1">Jane Doe</td>
-          <td>janedoe@gmail.com</td>
-          <td>26</td>
-          <td>Female</td>
-        </tr>
-      </tbody>
-    </table>
-    <br />
-    <br />
-    <!-- Input, Select, Label, Button, Form -->
-    <form>
-      <div>
-        <label for="name">Enter your name</label>
-        <input type="text" id="name" />
-      </div>
-      <div>
-        <label for="password">Enter your password</label>
-        <input type="password" id="password" />
-      </div>
-      <div>
-        <label for="gender">Gender</label>
-        <select id="gender">
-          <option value="M">Male</option>
-          <option value="F">Female</option>
-        </select>
-      </div>
-      <br />
-      <div>
-        <h5>What are your choices?</h5>
-        <div>
-          <input type="checkbox" />
-          <label>Choice 1</label>
-        </div>
-        <div>
-          <input type="checkbox" />
-          <label>Choice 2</label>
-        </div>
-        <div>
-          <input type="checkbox" />
-          <label>Choice 3</label>
-        </div>
-      </div>
-      <div>
-        <h5>1 + 1 =</h5>
-        <div>
-          <input name="ans" type="radio" />
-          <label>1</label>
-        </div>
-        <div>
-          <input name="ans" type="radio" />
-          <label>2</label>
-        </div>
-        <div>
-          <input name="ans" type="radio" />
-          <label>3</label>
-        </div>
-        <div>
-          <input name="ans" type="radio" />
-          <label>4</label>
-        </div>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-
-    <!-- Semantic tags -->
-    <nav></nav>
-    <header></header>
-    <main>
-      <section></section>
-      <article></article>
-      <aside></aside>
-    </main>
-    <footer></footer>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+      consectetur aperiam laboriosam accusamus laborum eveniet consequuntur
+      cumque est quis suscipit delectus magni dicta dolorum optio earum culpa
+      nobis, voluptas asperiores a quibusdam? Perferendis pariatur aliquid saepe
+      itaque placeat, quia cum!
+    </p>
   </body>
 </html>
