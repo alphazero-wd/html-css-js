@@ -1,120 +1,42 @@
-/* universal selector: 0 points */
-* {
-  color: gray;
-}
-/* simple selectors */
-/* by tag (h1, h2, h3, ...) 1 point */
-h1 {
-  color: green;
+.box {
+  height: 100px;
+  width: 100px;
 }
 
-/* by class (.classname) 10 points */
-.yellow {
-  color: yellow;
+.box1 {
+  /* named color (red, yellow, green, blue, etc.) */
+  background-color: red;
 }
 
-/* by using id (#idname) 100 points */
-#blue {
-  color: blue;
+.box2 {
+  /* hex color (# + 3 or 6 characters from A-F, 1-9) */
+  background-color: #fadc45;
 }
 
-/* overwrite id because 100 + 1 > 101 */
-/* style the h1 with the id of blue */
-h1#blue {
-  color: steelblue;
+.box3 {
+  /* rgb color (red: 0-255, green: 0-255, blue: 0-255) */
+  background-color: rgb(255, 145, 123);
 }
 
-/* grouping selector (,) */
-h1,
-div,
-p {
-  color: aqua;
+.box4 {
+  /* rgba color same as rgb color + alpha: 0-1 */
+  background-color: rgba(134, 201, 147, 0.5);
 }
 
-/* combinator selectors */
-/* descendant selectors */
-.items p {
-  color: red;
+.box5 {
+  /* hsl color (hue: 0-360, saturation: 0-100%, lightness: 0-100%) */
+  background-color: hsl(153, 100%, 50%);
 }
 
-/* child selectors */
-.items > p {
-  color: green;
+.textbox {
+  /* compare this */
+  opacity: 0.5;
+  background-color: rgb(255, 145, 123);
+
+  /* again this */
+  /* background-color: rgba(255, 145, 123, 0.8); */
 }
 
-/* adjacent sibling */
-.items + h4 {
-  /* !important overwrites everything */
-  color: dodgerblue !important;
-}
-
-/* next siblings */
-.items ~ h4 {
-  color: #aea851;
-}
-
-/* pseudo class property:class */
-/* style on hover */
-.btn:hover {
-  background-color: gold;
-}
-
-/* style on active */
-.btn:active {
-  background-color: #fdabc3;
-}
-
-/* style on focus */
-.input:focus {
-  background-color: gray;
-}
-
-/* select 1st, last, nth child in a list or anything */
-.list li:first-child {
-  color: red;
-}
-.list li:nth-child(2) {
-  color: #45eabc;
-}
-.list li:last-child {
-  color: #adf819;
-}
-
-.paragraph {
-  background-color: black;
-}
-/* pseudo elements :: */
-/* style the 1st line */
-.paragraph::first-line {
-  color: greenyellow;
-}
-
-/* style the 1st letter */
-.paragraph::first-letter {
-  font-size: 2em;
-}
-
-/* style the part the user selected */
-::selection {
-  background-color: #45eabc;
-  color: #fdabc3;
-}
-
-/* style the markers (bullets & numering) */
-::marker {
-  color: red;
-  font-size: 1.25rem;
-}
-
-/* before & after */
-.paragraph::before {
-  /* content is necessary */
-  content: "Hello";
-  color: #fade1b;
-}
-
-.paragraph::after {
-  /* content is necessary */
-  content: "World!!!";
-  color: #617bac;
+.textbox p {
+  color: #000;
 }
